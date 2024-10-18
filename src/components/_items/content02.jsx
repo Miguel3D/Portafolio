@@ -153,6 +153,8 @@ export default function Content02() {
                               : `#slide_${elemento.id}_${index - 1}`
                           }
                           className={`btn btn-circle btn-active ${isFirst ? "btn-disabled" : ""}`}
+                          title="Imagen anterior"
+                          rel="noreferrer noopener"
                         >
                           ❮
                         </a>
@@ -163,6 +165,8 @@ export default function Content02() {
                               : `#slide_${elemento.id}_${index + 1}`
                           }
                           className={`btn btn-circle btn-active ${isLast ? "btn-disabled" : ""}`}
+                          title="Imagen siguiente"
+                          rel="noreferrer noopener"
                         >
                           ❯
                         </a>
