@@ -11,6 +11,8 @@ import IconFigma from "../../assets/img/iconFigma.png";
 import IconGit from "../../assets/img/IconGit.png";
 import IconVercel from "../../assets/img/iconVercel.png";
 import IconCloudinary from "../../assets/img/IconCloudinary.png";
+import IconNotion from "../../assets/img/IconoNotion.webp";
+import IconSlack from "../../assets/img/IconoSlack.webp";
 
 export default function Content03() {
   const data = [
@@ -131,11 +133,29 @@ export default function Content03() {
       colorText: "text-green-400",
       colorBorder: "ring-green-400/20",
     },
+    {
+      img: IconNotion,
+      title: "Notion",
+      tag: "☁️ Productivity",
+      experience: "4",
+      colorBg: "bg-orange-400/10",
+      colorText: "text-orange-400",
+      colorBorder: "ring-orange-400/20",
+    },
+    {
+      img: IconSlack,
+      title: "Slack",
+      tag: "☁️ Communication",
+      experience: "5",
+      colorBg: "bg-purple-400/10",
+      colorText: "text-purple-400",
+      colorBorder: "ring-purple-400/20",
+    },
   ];
 
   return (
     <section className="mx-5 space-y-3 py-4">
-      <div className="grid w-full grid-cols-5 gap-11">
+      <div className="grid w-full grid-cols-2 gap-11 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {data.map((elemento, i) => {
           const experience = parseFloat(elemento.experience);
           const fullStars = Math.floor(experience);
@@ -143,7 +163,7 @@ export default function Content03() {
 
           return (
             <div
-              className="flex w-full flex-col items-center space-y-2.5 px-2"
+              className="flex h-full w-full flex-col items-center justify-between space-y-2.5 px-2"
               key={i}
             >
               <img
@@ -158,7 +178,7 @@ export default function Content03() {
                 {elemento.title}
               </h3>
               <span
-                className={`inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset ${elemento.colorBg} ${elemento.colorText} ${elemento.colorBorder}`}
+                className={`inline-flex items-center whitespace-nowrap rounded-lg px-2 py-1 text-xs font-medium ring-1 ring-inset ${elemento.colorBg} ${elemento.colorText} ${elemento.colorBorder}`}
               >
                 {elemento.tag}
               </span>

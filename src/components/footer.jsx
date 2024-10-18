@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full px-10 pb-5">
+    <footer className="w-full px-5 pb-5 md:px-10">
       <div className="flex w-full flex-col items-center justify-center rounded-xl bg-[#1D232A] py-10 text-base">
         <nav className="mb-5">
           <div className="grid grid-flow-col items-center gap-4">

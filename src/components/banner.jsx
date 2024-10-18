@@ -39,7 +39,7 @@ export default function Banner() {
             en el mundo del desarrollo web y de aplicaciones.
           </p>
         </div>
-        <div className="flex flex-row items-center space-x-5 px-10 py-5">
+        <div className="flex flex-row items-start space-x-5 px-10 py-5">
           <div className="flex flex-row space-x-1 text-[#868e96]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
